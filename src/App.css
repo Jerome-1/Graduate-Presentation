@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-page {
+  background-image: linear-gradient(to bottom, transparent 10%, black 100%), url(../public/images/UnSplash.jpg);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content-box {
+  border: rgb(58, 33, 120);
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 250px;
+  width: 950px;
+  background-color: rgba(58, 33, 120, 0.536);
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  top: 12%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content h1 {
+  font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+
+  width: 150px;
+  position: fixed;
+  left: 53%;
+  bottom: 60px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
+
+.Nav {
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 70%;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+.nav-bar-links {
+  padding: 55px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar-links:hover{
+  color: aqua;
+}
+

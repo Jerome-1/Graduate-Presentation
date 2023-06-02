@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home.js';
+import Agenda from './pages/Agenda.js';
+import Overview from './pages/Overview.js';
+import MDP from './pages/MDP.js'
+import Role from './pages/Role.js'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/agenda' element={<Agenda/>} />
+        <Route path='/overview' element={<Overview/>} />
+        <Route path='/project' element={<MDP/>} />
+        <Route path='/role' element={<Role/>} />
+      </Routes>
+    </>
+  )
+};
 
 export default App;
